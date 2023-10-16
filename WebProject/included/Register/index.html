@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">  
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Create account</h2>
+                        <form method="POST" action="register.php" id="signup-form" class="signup-form">
+                            <!-- User's Name -->
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="name" id="name" placeholder="Your Name" required />
+                            </div>
+                        
+                            <!-- User's Email -->
+                            <div class="form-group">
+                                <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" required />
+                            </div>
+                        
+                            <!-- User's Password -->
+                            <div class="form-group">
+                                <input type="password" class="form-input" name="password" id="password" placeholder="Password" required />
+                                <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            </div>
+                        
+                            <!-- Repeat Password -->
+                            <div class="form-group">
+                                <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password" required />
+                            </div>
+                        
+                            <!-- Gender -->
+                            <div class="form-group">
+                                <label for="gender">Gender:</label>
+                                <select class="form-input" name="gender" id="gender" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                        
+                            <!-- Role -->
+                            <div class="form-group">
+                                <label for="role">Role:</label>
+                                <select class="form-input" name="role" id="role" required>
+                                    <option value="admin">Admin</option>
+                                    <option value="user">User</option>
+                                </select>
+                            </div>
+                        
+                            <!-- Status -->
+                            <div class="form-group">
+                                <label for="status">Status:</label>
+                                <select class="form-input" name="status" id="status" required>
+                                    <option value="active">Active</option>
+                                    <option value="inactive">Inactive</option>
+                                </select>
+                            </div>
+                        
+                            <!-- Terms and Conditions -->
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                        
+                            <!-- Submit Button -->
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up" />
+                            </div>
+                        </form>
+
+                        <p class="loginhere">
+                            Have already an account ? <a href="#" class="loginhere-link">Login here</a>
+                        </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
